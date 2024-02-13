@@ -2,7 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* TODO: implement dark mode toggle */
+
 :root {
+  --background: linear-gradient(
+      135deg,
+      hsl(0deg 0% 9%) 1%,
+      hsl(241deg 3% 14%) 51%,
+      hsl(240deg 4% 20%) 49%,
+      hsl(240deg 5% 26%) 99%
+    );
+}
+
+html {
+  background-image: var(--background);
+}
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,4 +46,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
